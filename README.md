@@ -16,4 +16,4 @@ This repository contains the frontend web application of the Career Accelerator 
 3. Run the app locally
 
 ## Team
-CareerForge Startup Team
+CareerForge Startup 
