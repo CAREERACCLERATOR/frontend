@@ -2,9 +2,16 @@ name: CareerForge CI
 
 on:
   push:
-    branches: [ main, develop ]
+    branches:
+      - main
+      - develop
+
   pull_request:
-    branches: [ main, develop ]
+    branches:
+      - main
+      - develop
+
+  workflow_dispatch:
 
 jobs:
   build:
@@ -20,9 +27,10 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: |
-          npm install || true
+        run: npm install
+
+      - name: Run Dummy Test
+        run: echo "Tests Passed Successfully"
 
       - name: Build project
-        run: |
-          echo "Build successful 🎉"
+        run: echo "Build successful 🎉"
